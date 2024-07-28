@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.left {
+  flex: 1;
+  position: relative;
+  height: calc(100vh - 200px);
+}
+
+.img {
+  object-fit: cover;
+}
+
+.right {
+  flex: 2;
+  flex-direction: column;
+  gap: 50px;
+  display: flex;
+}
+
+.avatar {
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.details {
+  display: flex;
+  gap: 50px;
+}
+
+.author span {
+  color: gray;
+}
+.date span {
+  color: gray;
+}
+
+.author,
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}

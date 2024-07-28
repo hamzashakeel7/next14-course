@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  gap: 100px;
+}
+
+.textContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mainHeading {
+  font-size: 50px;
+  width: 120%;
+  z-index: 1;
+}
+.subHeading {
+  font-size: 30px;
+  color: rgb(102, 102, 225);
+}
+.textContainer p {
+  font-size: 18px;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 3rem;
+  width: 105%;
+  text-align: center;
+}
+
+.heroImg {
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .heroImg {
+    display: none;
+  }
+}
