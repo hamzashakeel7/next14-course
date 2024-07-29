@@ -6,7 +6,9 @@ import { Suspense } from "react";
 import PostUser from "@/components/postUser/PostUser";
 
 const getData = async (slug) => {
-  const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+  const res = await fetch(
+    `https://next14-course-omega.vercel.app/api/blog/${slug}`
+  );
 
   if (!res.ok) {
     throw new Error(`HTTP error! status: ${res.status}`);
